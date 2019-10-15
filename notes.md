@@ -1,0 +1,2 @@
+- Template for a command leaves the command untyped
+- `print.debug` is cute, but annoying when there's more than one
