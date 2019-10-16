@@ -1,8 +1,7 @@
 {
   "name": "ts-fourslash-create",
   "version": "0.0.1",
-  "description": "ts-fourslash-create CLI",
-  "private": true,
+  "description": "A CLI for creating a fourslash test file for the TypeScript compiler based on a repro folder.",
   "bin": {
     "ts-fourslash-create": "bin/ts-fourslash-create"
   },
@@ -31,11 +30,11 @@
   "dependencies": {
     "@orta/language-services": "^3.7.0",
     "common-path": "^1.0.0",
-    "gluegun": "latest",
-    "ts-node": "^7.0.1",
-    "typescript": "3.2.2"
+    "gluegun": "latest"
   },
   "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "3.2.2",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "jest": "^23.6.0",
