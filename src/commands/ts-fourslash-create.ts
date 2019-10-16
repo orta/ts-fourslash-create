@@ -47,7 +47,7 @@ Usage: npx ts-fourslash-create [optional path to folder]
 
     // Try get the tsconfig settings
     let config = {}
-    const tsconfig = allFiles.find(p => p.endsWith('tsconfig.json'))
+    const tsconfig = allFiles.find(p => p.endsWith('tsconfig.json') || p.endsWith("jsconfig.json"))
     if (tsconfig) {
       const foundConfig = JSON.parse(fs.read(tsconfig))
       const foundCompilerSettings = foundConfig.compilerOptions || {}
@@ -66,7 +66,7 @@ Usage: npx ts-fourslash-create [optional path to folder]
 
     // Make a list of files
     const compilerSettings = Object.keys(config).map(k => `// @${k}: ${config[k]}`)
-    const files = commonPathsRelativeToCommonRoot.filter(f => !f.endsWith("tsconfig.json")).map(f => {
+    const files = commonPathsRelativeToCommonRoot.filter(f => !f.endsWith("tsconfig.json") || !f.endsWith("jsconfig.json")).map(f => {
       const file = fs.read(join(commonPaths.commonDir, f))
       return `// @Filename: ${f}\n////` + file.split("\n").join("\n////")
     })
