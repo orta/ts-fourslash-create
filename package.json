@@ -29,19 +29,21 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "typescript": "3.2.2",
+    "@orta/language-services": "^3.7.0",
+    "common-path": "^1.0.0",
+    "gluegun": "latest",
     "ts-node": "^7.0.1",
-    "gluegun": "latest"
+    "typescript": "3.2.2"
   },
   "devDependencies": {
-    "@types/node": "^10.12.12",
     "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
+    "jest": "^23.6.0",
+    "prettier": "^1.12.1",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.0",
     "tslint-config-prettier": "^1.17.0",
-    "tslint-config-standard": "^8.0.1",
-    "prettier": "^1.12.1",
-    "jest": "^23.6.0"
+    "tslint-config-standard": "^8.0.1"
   },
   "jest": {
     "preset": "ts-jest",

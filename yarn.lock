@@ -18,15 +18,20 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@orta/language-services@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@orta/language-services/-/language-services-3.7.0.tgz#3910940702e615b68ee1fb8cc6fa57a72a0f3942"
+  integrity sha512-XW8VL3EO8moDqiXiV7o4iPp4SGCFwiKNNxUGc1B2zt9YXKkV8ulr3xM/nm38d7CbkUct5eEF2XaIu27FFUPDwA==
+
 "@types/jest@^23.3.10":
   version "23.3.14"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.14.tgz#37daaf78069e7948520474c87b80092ea912520a"
   integrity sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
 
 "@types/node@^10.12.12":
-  version "10.14.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.21.tgz#4a9db7ef1d1671c0015e632c5fa3d46c86c58c1e"
-  integrity sha512-nuFlRdBiqbF+PJIEVxm2jLFcQWN7q7iWEJGsBV4n7v1dbI9qXB8im2pMMKMCUZe092sQb5SQft2DHfuQGK5hqQ==
+  version "10.14.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.22.tgz#34bcdf6b6cb5fc0db33d24816ad9d3ece22feea4"
+  integrity sha512-9taxKC944BqoTVjE+UT3pQH0nHZlTvITwfsOZqyc+R3sfJuxaTtxWjfn1K2UlxyPcKHf0rnaXcVFrS9F9vf0bw==
 
 abab@^2.0.0:
   version "2.0.2"
@@ -698,6 +703,11 @@ commander@^2.12.1:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
+common-path@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/common-path/-/common-path-1.0.0.tgz#0fd678f4f55aadfda50c130659d581822f44418f"
+  integrity sha512-OwDYqK3VNKKczcDuUUT3LtJwyMh52z/CCwSDbK/ge0eLm96uGpzgTBgyXEzEu436AMwECQUXATEYGtMlT6dcQA==
 
 component-emitter@^1.2.1:
   version "1.3.0"
