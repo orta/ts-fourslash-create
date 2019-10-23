@@ -2,6 +2,7 @@ import { GluegunToolbox, GluegunCommand } from 'gluegun'
 import { join } from 'path'
 import * as commonPath from 'common-path'
 import * as ts from '@orta/language-services'
+import * as JSON5 from "json5"
 
 const create: GluegunCommand = {
   name: 'ts-fourslash-create',
@@ -51,7 +52,7 @@ Usage: npx ts-fourslash-create [optional path to folder]
     let config = {}
     const tsconfig = allFiles.find(p => p.endsWith('tsconfig.json') || p.endsWith("jsconfig.json"))
     if (tsconfig) {
-      const foundConfig = JSON.parse(fs.read(tsconfig))
+      const foundConfig = JSON5.parse(fs.read(tsconfig))
       const foundCompilerSettings = foundConfig.compilerOptions || {}
 
       // This is a bit meh of a technique, given that the function returns
