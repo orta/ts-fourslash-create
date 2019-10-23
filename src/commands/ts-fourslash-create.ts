@@ -33,6 +33,8 @@ Usage: npx ts-fourslash-create [optional path to folder]
         f =>
           !f.includes('node_modules/') &&
           !f.includes('yarn.') &&
+          !f.includes('.git') && 
+          !f.includes('.md') && 
           !f.includes('package-lock') &&
           !f.includes('package.json')
       )
