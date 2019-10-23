@@ -1,6 +1,6 @@
 {
   "name": "ts-fourslash-create",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A CLI for creating a fourslash test file for the TypeScript compiler based on a repro folder.",
   "bin": {
     "ts-fourslash-create": "bin/ts-fourslash-create"
@@ -10,6 +10,7 @@
     "lint": "tslint -p .",
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
+    "prepublishOnly": "yarn compile",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
     "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
     "test": "jest",
